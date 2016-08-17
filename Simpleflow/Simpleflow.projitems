@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{3D005BEB-089C-4CCE-B6D3-B7C896D07234}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Simpleflow</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IStateful.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IStateTransition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IActivityStateTransition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\StatefulEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\StateChangedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\StateChangingEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\ActivityStartedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\ActivityStartingEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\ActivityEndedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\IStateChangeEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\ICancellableEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IStateTransitionContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IActivityStateTransitionContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IStateManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IActivityStateManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IActivityRunner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\StateManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\StateTransitionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\ActivityStateTransitionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Events\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Managers\" />
+  </ItemGroup>
+</Project>
